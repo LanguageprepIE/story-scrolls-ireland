@@ -1,0 +1,70 @@
+:root{--forest:#24483d;--forest-dark:#173329;--sage:#68806a;--paper:#fbf6e9;--parchment:#e9ddc5;--gold:#a8894b;--ink:#24352e;--muted:#52675b;--border:#cbbb9a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e6e3d7;color:var(--ink);font:18px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif}
+button,select{font:inherit}
+button{cursor:pointer}
+button:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #ad7a23;outline-offset:4px}
+button:disabled{opacity:.4;cursor:not-allowed}
+.skip-link{position:absolute;left:-9999px;top:4px;z-index:40;background:white;padding:12px}
+.skip-link:focus{left:8px}
+.topbar{background:var(--forest-dark);color:#f6edd8;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px clamp(16px,3vw,48px)}
+.wordmark{border:0;background:none;color:inherit;text-align:left;font:clamp(16px,2vw,22px) Georgia,serif;display:flex;align-items:center;gap:10px}
+.wordmark span:first-child{color:#e4c27e}
+.language-label{font-size:14px;display:flex;align-items:center;gap:10px}
+.language-label select{background:var(--forest);border:1px solid #92a397;border-radius:8px;color:white;padding:9px}
+.button{border:2px solid var(--forest);background:var(--forest);color:white;border-radius:12px;min-height:54px;padding:11px 24px;font-weight:650;box-shadow:0 3px 7px #223d3112}
+.button.secondary{background:#fffaf0;color:var(--forest)}
+.button:hover:not(:disabled){filter:brightness(1.08)}
+.home{max-width:1220px;margin:24px auto 0;padding:0 16px}
+.cover{min-height:min(760px,79vh);background:#c7ad7b url('assets/scroll-cover.webp') center/cover no-repeat;border-radius:22px;display:grid;place-items:center;padding:clamp(30px,5vw,70px);box-shadow:0 22px 55px #1c302631;overflow:hidden}
+.cover-copy{text-align:center;max-width:730px;padding:20px 12px;color:#254539}
+.overline{text-transform:uppercase;font-weight:700;letter-spacing:.12em;font-size:clamp(10px,1.2vw,13px);color:#59705d}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.14;font-weight:500}
+h1{font-size:clamp(37px,6vw,77px);margin:18px 0;color:#224a3d;text-wrap:balance}
+.cover-subtitle{font:italic clamp(17px,2vw,24px) Georgia,serif;color:#526348}
+.byline{font:clamp(15px,1.6vw,19px) Georgia,serif;margin:22px auto 28px}
+.home-note{max-width:780px;margin:22px auto;text-align:center;color:#45574e}
+.home-note a,.footer a,.text-link{color:#255c47;text-underline-offset:3px}
+.library{max-width:850px;margin:40px auto;padding:0 20px 35px}
+.library h2{font-size:clamp(34px,5vw,54px)}
+.library p{max-width:670px}
+.story-tile{display:grid;grid-template-columns:minmax(180px,270px) 1fr;gap:24px;background:#fffaf0;padding:18px;border:1px solid var(--border);border-radius:18px;box-shadow:0 8px 25px #1e38241b;margin-top:24px;align-items:center}
+.story-tile img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:11px}
+.story-tile h3{font-size:32px;margin:9px 0}
+.tile-note{font-size:14px;color:var(--muted)}
+.reader{max-width:840px;margin:20px auto 0;padding:0 16px 42px}
+.reader-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:13px}
+.progress-label{font-size:16px;font-weight:650;color:var(--forest)}
+.progress-track{height:9px;background:#cec7b7;border-radius:15px;overflow:hidden;margin:14px 0 20px}
+.progress-fill{background:#54795e;height:100%;transition:width .18s ease}
+.scroll-panel{position:relative;background:#fffaf0;border:2px solid var(--border);border-radius:23px;box-shadow:0 16px 36px #263d2a20;padding:clamp(22px,4vw,48px);min-height:420px;animation:reveal .25s ease-out}
+.scroll-panel::before,.scroll-panel::after{content:"";position:absolute;height:12px;left:16px;right:16px;background:linear-gradient(#e1d2af,#f4e9d2 58%,#bda576);border-radius:22px;pointer-events:none}
+.scroll-panel::before{top:-7px}.scroll-panel::after{bottom:-7px}
+.scene-art{display:block;max-height:280px;max-width:100%;width:auto;object-fit:contain;margin:0 auto 22px;border-radius:12px;box-shadow:0 8px 23px #20372d1b}
+.scene-motif{text-align:center;color:#b69c64;font-size:31px;margin:8px 0 10px}
+.scroll-panel h2{font-size:clamp(29px,4.7vw,43px);margin:0 0 24px;text-align:center}
+.story-text{max-width:650px;margin:auto;font-size:clamp(20px,2.4vw,24px);line-height:1.62;letter-spacing:.002em}
+.story-text p{margin:0 0 1.05em}
+.story-text p:last-child{margin-bottom:0}
+.reader-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:24px}
+.reader-controls .button{min-width:126px}
+.audio{background:#e4ecdF;color:#183c2d;border:2px solid #668673;border-radius:12px;padding:10px 17px;min-height:54px;font-weight:650}
+.reader-hint{font-size:14px;color:var(--muted);text-align:center;margin:17px 0}
+.quiz{max-width:750px;margin:30px auto;padding:0 16px}
+.quiz-card{padding:clamp(24px,4vw,48px);border-radius:20px;background:#fffaf0;border:2px solid var(--border)}
+.quiz h2{font-size:clamp(30px,5vw,44px)}
+.answers{display:grid;gap:14px;margin:25px 0}
+.answer{width:100%;text-align:left;min-height:70px;background:white;border:2px solid #9aaf9e;color:#1f4635;border-radius:12px;padding:13px 21px;font-size:21px}
+.answer[aria-pressed=true]{background:#dcebdd;border-color:#376b4d}
+.feedback{font-weight:650;min-height:30px;color:#2c6142}
+.quiz-actions{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:15px}
+.footer{font-size:13px;text-align:center;color:#52665b;padding:24px 16px 35px}
+.footer p{margin:10px 0}
+.footer details{max-width:740px;margin:0 auto}
+.footer summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.footer details p{line-height:1.7}
+@keyframes reveal{from{opacity:.65;transform:translateY(8px) scaleY(.985)}to{opacity:1;transform:none}}
+@media(max-width:700px){.cover{min-height:570px;background-size:cover;padding:24px 22px}.cover-copy{background:#f6eacdDB;border-radius:17px;padding:26px 15px}.story-tile{grid-template-columns:1fr}.story-tile img{max-height:220px}.scroll-panel{min-height:0}.reader-controls .button{min-width:105px;padding:10px}.language-label span{display:none}}
+@media(max-width:420px){.reader-controls{display:grid;grid-template-columns:1fr 1fr}.audio{grid-column:1/-1;grid-row:1}.reader-controls .button{min-width:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.scroll-panel{animation:none}.progress-fill{transition:none}}

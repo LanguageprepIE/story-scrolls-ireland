@@ -1,0 +1,41 @@
+{
+  "id": "children-of-lir",
+  "en": {
+    "title": "The Children of Lir",
+    "summary": "Four children, a spell, and a family that stays together.",
+    "sections": [
+      {"heading": "Lir and his family", "image": "family", "paragraphs": ["Long ago, in Ireland, there lived a man called Lir.", "Lir had four children: Fionnuala, Aodh, Fiachra and Conn. Fionnuala was the oldest. The other three were her brothers.", "Lir loved his children very much. They lived near a beautiful lake. They liked walking, playing and singing together."]},
+      {"heading": "A new wife", "paragraphs": ["One day, Lir's wife died. The family was very sad.", "Later, Lir married a woman called Aoife. At first, Aoife was kind to the children.", "But she became jealous. She thought Lir loved his children more than he loved her. The children had done nothing wrong."]},
+      {"heading": "The spell", "image": "transformation", "paragraphs": ["One day, Aoife took the four children to a lake called Lough Derravaragh.", "She told them to swim. Then she used magic to cast a terrible spell.", "The children changed into four white swans. They still remembered their lives. They could still speak and sing, but they could not become children again."]},
+      {"heading": "A very long time", "paragraphs": ["Aoife told the swans that the spell would last for nine hundred years.", "They would spend three hundred years on the lake, three hundred years on the cold Sea of Moyle, and three hundred years near the west coast of Ireland.", "Fionnuala promised to look after her three brothers."]},
+      {"heading": "Their father's voice", "image": "swans", "paragraphs": ["Lir came to the lake to find his children.", "Four white swans swam towards him. Fionnuala called, \"Father!\"", "Lir knew her voice. He was heartbroken, but he stayed with them. The swans sang a beautiful song. They stayed on the lake for three hundred years."]},
+      {"heading": "The stormy sea", "paragraphs": ["Then the four swans flew to the Sea of Moyle. The water was cold. Strong winds and huge waves made life difficult.", "One night, a storm separated the swans. Fionnuala searched until she found all three of her brothers.", "They stayed close and helped one another. Many years passed. At last, they flew west."]},
+      {"heading": "The empty home", "paragraphs": ["The swans spent their final three hundred years near the west coast of Ireland.", "One day, they went back to look for their old home. But the house was gone. Their father and everyone they had known were gone too.", "The four swans felt sad. Still, they had each other."]},
+      {"heading": "The last song", "paragraphs": ["On a small island, the swans heard a church bell. A kind monk welcomed them and listened to their story.", "The old spell finally ended. The swans became people again, but they were now very old.", "Soon, all four died. In the traditional story, the monk buried them together.", "The Children of Lir is a sad legend. It reminds us how Fionnuala cared for her brothers and how the family stayed together through difficult times."]}
+    ],
+    "questions": [
+      {"question": "How many children did Lir have?", "options": ["Four", "Six"], "correct": 0, "explanation": "Lir had four children."},
+      {"question": "What did Aoife turn the children into?", "options": ["White swans", "White horses"], "correct": 0, "explanation": "The children became four white swans."},
+      {"question": "What did Fionnuala do for her brothers?", "options": ["She looked after them", "She left them alone"], "correct": 0, "explanation": "Fionnuala stayed with her brothers and helped them."}
+    ]
+  },
+  "es": {
+    "title": "Los hijos de Lir",
+    "summary": "Cuatro hermanos, un hechizo y una familia que permanece unida.",
+    "sections": [
+      {"heading": "Lir y su familia", "image": "family", "paragraphs": ["Hace mucho tiempo, en Irlanda, vivía un hombre llamado Lir.", "Lir tenía cuatro hijos: Fionnuala, Aodh, Fiachra y Conn. Fionnuala era la mayor. Los otros tres eran sus hermanos.", "Lir quería muchísimo a sus hijos. Vivían cerca de un lago precioso. Les gustaba pasear, jugar y cantar juntos."]},
+      {"heading": "Una nueva esposa", "paragraphs": ["Un día, la esposa de Lir murió. Toda la familia estaba muy triste.", "Más tarde, Lir se casó con una mujer llamada Aoife. Al principio, Aoife trataba bien a los niños.", "Pero comenzó a sentir celos. Pensaba que Lir quería más a sus hijos que a ella. Los niños no habían hecho nada malo."]},
+      {"heading": "El hechizo", "image": "transformation", "paragraphs": ["Un día, Aoife llevó a los cuatro niños a un lago llamado Derravaragh.", "Les dijo que fueran a nadar. Entonces utilizó magia y lanzó un terrible hechizo.", "Los niños se convirtieron en cuatro cisnes blancos. Recordaban sus vidas. Todavía podían hablar y cantar, pero ya no podían volver a ser niños."]},
+      {"heading": "Muchísimos años", "paragraphs": ["Aoife les dijo que el hechizo duraría novecientos años.", "Pasarían trescientos años en el lago, trescientos en el frío mar de Moyle y trescientos cerca de la costa occidental de Irlanda.", "Fionnuala prometió cuidar de sus tres hermanos."]},
+      {"heading": "La voz de su padre", "image": "swans", "paragraphs": ["Lir fue al lago para buscar a sus hijos.", "Cuatro cisnes blancos nadaron hacia él. Fionnuala gritó: «¡Papá!». ", "Lir reconoció su voz. Estaba destrozado, pero se quedó con ellos. Los cisnes cantaron una canción preciosa. Permanecieron en el lago durante trescientos años."]},
+      {"heading": "El mar de las tormentas", "paragraphs": ["Después, los cuatro cisnes volaron hasta el mar de Moyle. El agua estaba helada. El viento y las enormes olas hacían la vida muy difícil.", "Una noche, una tormenta separó a los hermanos. Fionnuala buscó hasta encontrar a los tres.", "Se mantuvieron unidos y se ayudaron. Pasaron muchos años. Finalmente, volaron hacia el oeste."]},
+      {"heading": "La casa vacía", "paragraphs": ["Los cisnes pasaron sus últimos trescientos años cerca de la costa occidental de Irlanda.", "Un día, regresaron para buscar su antigua casa. Pero la casa había desaparecido. Su padre y todas las personas que conocían también habían muerto.", "Los cuatro cisnes sintieron mucha tristeza. Aun así, seguían juntos."]},
+      {"heading": "La última canción", "paragraphs": ["En una pequeña isla, los cisnes oyeron la campana de una iglesia. Un monje amable los acogió y escuchó su historia.", "Finalmente, el antiguo hechizo terminó. Los cisnes volvieron a ser personas, pero ahora eran muy mayores.", "Poco después, los cuatro murieron. Según la leyenda tradicional, el monje los enterró juntos.", "Los hijos de Lir es una leyenda triste. Nos recuerda cómo Fionnuala cuidó de sus hermanos y cómo la familia permaneció unida en los momentos difíciles."]}
+    ],
+    "questions": [
+      {"question": "¿Cuántos hijos tenía Lir?", "options": ["Cuatro", "Seis"], "correct": 0, "explanation": "Lir tenía cuatro hijos."},
+      {"question": "¿En qué convirtió Aoife a los niños?", "options": ["En cisnes blancos", "En caballos blancos"], "correct": 0, "explanation": "Los niños se convirtieron en cuatro cisnes blancos."},
+      {"question": "¿Qué hizo Fionnuala por sus hermanos?", "options": ["Cuidó de ellos", "Los dejó solos"], "correct": 0, "explanation": "Fionnuala permaneció con sus hermanos y los ayudó."}
+    ]
+  }
+}
