@@ -25,7 +25,7 @@ Este proyecto de ChatGPT comprende **dos colecciones distintas**. No mezclar su 
 
 1. Al iniciar una tarea, identificar explícitamente si afecta a **[LIBRO]**, **[PERGAMINOS]** o **[AMBOS]**.
 2. No modificar ni publicar en un repositorio cuando el usuario esté hablando del otro, salvo petición clara.
-3. Conservar coherencia de nombres propios y hechos tradicionales entre versiones, pero escribir cada adaptación con estilo propio; no copiar traducciones modernas protegidas.
+3. Conservar coherencia de nombres propios y acontecimientos tradicionales entre versiones. Redactar el inglés y el español como dos narraciones naturales e independientes, respetando el ritmo, los giros y el estilo apropiados de cada lengua: no traducir literalmente frase por frase ni copiar traducciones modernas protegidas.
 4. Mantener ambas webs bilingües, usables en iPad, móvil y ordenador; sin cuentas ni recogida de datos personales de menores.
 5. Documentar autoría: proyecto y dirección editorial de David Martín Guerrero, tradiciones irlandesas de origen, y apoyo de IA en textos, traducciones e ilustraciones.
 6. En cada nueva historia, confirmar primero la trama, extensión, estructura y referencias visuales. Reutilizar ilustraciones aprobadas cuando proceda y evitar incoherencia de personajes.
