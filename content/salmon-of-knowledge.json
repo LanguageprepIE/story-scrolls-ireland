@@ -1,0 +1,197 @@
+{
+  "id": "salmon-of-knowledge",
+  "en": {
+    "title": "The Salmon of Knowledge",
+    "summary": "A young apprentice, a patient poet, and an unexpected gift.",
+    "sections": [
+      {
+        "heading": "The young apprentice",
+        "image": "salmonMentor",
+        "paragraphs": [
+          "Long ago, a boy named Fionn went to live beside the River Boyne in Ireland.",
+          "He wanted to learn from Finegas, a poet who knew many stories and taught people about the world.",
+          "Fionn collected firewood, fetched water and listened carefully. He asked so many questions that Finegas sometimes laughed."
+        ]
+      },
+      {
+        "heading": "Seven years of waiting",
+        "paragraphs": [
+          "Every day, Finegas watched a deep pool in the river.",
+          "He was waiting for a special fish called the Salmon of Knowledge. People said that whoever tasted it would receive extraordinary wisdom.",
+          "Finegas had waited for seven years. A prophecy said that someone named Fionn would taste the salmon. The boy was surprised. Fionn was his name too."
+        ]
+      },
+      {
+        "heading": "The silver fish",
+        "image": "salmonFish",
+        "paragraphs": [
+          "One day, Finegas felt a strong pull on his fishing line.",
+          "He struggled with the fish until he finally brought it out of the water. It was a beautiful salmon with shining silver scales.",
+          "Finegas could hardly believe it. After seven long years, he had caught the fish he wanted."
+        ]
+      },
+      {
+        "heading": "A careful promise",
+        "paragraphs": [
+          "Finegas took the salmon home and asked Fionn to cook it.",
+          "“Cook it carefully,” he said. “But do not eat any.”",
+          "Fionn promised. He placed the fish over the fire and turned it slowly. He wanted to do the job well."
+        ]
+      },
+      {
+        "heading": "The burned thumb",
+        "paragraphs": [
+          "As the salmon cooked, a small bubble rose on its skin.",
+          "Fionn touched it without thinking. The hot skin burned his thumb. He quickly put his thumb into his mouth to ease the pain.",
+          "At that moment, something changed. Ideas that had seemed difficult suddenly made sense. Fionn understood things he had never understood before."
+        ]
+      },
+      {
+        "heading": "Finegas understands",
+        "image": "salmonGift",
+        "paragraphs": [
+          "When the fish was ready, Fionn brought it to Finegas.",
+          "“Did you eat any?” the poet asked.",
+          "“No,” said Fionn. “But I burned my thumb and put it in my mouth.”",
+          "Finegas grew quiet. He understood that the boy had tasted the salmon by accident. The gift of knowledge had gone to Fionn."
+        ]
+      },
+      {
+        "heading": "A generous choice",
+        "paragraphs": [
+          "Finegas was sad. He had waited for this gift for seven years.",
+          "But he did not blame Fionn. He told the boy to eat the salmon and use his new knowledge wisely.",
+          "“Will I know everything?” Fionn asked.",
+          "“No one always knows what is right,” Finegas replied. “You still have much to learn.”",
+          "Fionn thanked his teacher and continued his journey. The legend says that later, when he needed hidden knowledge, he could place his thumb in his mouth again."
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "question": "What was Finegas waiting to catch?",
+        "options": [
+          "The Salmon of Knowledge",
+          "A golden bird"
+        ],
+        "correct": 0,
+        "explanation": "Finegas had waited seven years for the special salmon."
+      },
+      {
+        "question": "How did Fionn first taste the salmon?",
+        "options": [
+          "He burned his thumb and put it in his mouth.",
+          "He secretly ate the fish."
+        ],
+        "correct": 0,
+        "explanation": "It happened by accident when Fionn tried to ease the burn."
+      },
+      {
+        "question": "What did Finegas tell Fionn to do?",
+        "options": [
+          "Eat the salmon and use his gift wisely.",
+          "Throw the salmon back into the river."
+        ],
+        "correct": 0,
+        "explanation": "Finegas chose to help his pupil despite his disappointment."
+      }
+    ]
+  },
+  "es": {
+    "title": "El salmón del conocimiento",
+    "summary": "Un joven aprendiz, un poeta paciente y un regalo inesperado.",
+    "sections": [
+      {
+        "heading": "El joven aprendiz",
+        "image": "salmonMentor",
+        "paragraphs": [
+          "Hace mucho tiempo, un muchacho llamado Fionn llegó a las orillas del río Boyne, en Irlanda.",
+          "Quería aprender de Finegas, un poeta que conocía muchas historias y enseñaba a los demás.",
+          "Fionn recogía leña, traía agua y escuchaba con atención. Hacía tantas preguntas que su maestro a veces se echaba a reír."
+        ]
+      },
+      {
+        "heading": "Siete años de espera",
+        "paragraphs": [
+          "Finegas observaba cada día un remanso profundo del río.",
+          "Esperaba pescar un pez especial: el Salmón del Conocimiento. Según la leyenda, quien lo probara recibiría una sabiduría extraordinaria.",
+          "Llevaba siete años esperando. Una profecía decía que alguien llamado Fionn probaría el salmón. El muchacho se sorprendió: ¡él también se llamaba Fionn!"
+        ]
+      },
+      {
+        "heading": "El pez plateado",
+        "image": "salmonFish",
+        "paragraphs": [
+          "Un día, Finegas notó un fuerte tirón en el sedal.",
+          "Luchó durante un buen rato hasta sacar el pez del agua. Era un salmón precioso, de escamas plateadas y brillantes.",
+          "Finegas casi no podía creerlo. Después de siete largos años, por fin lo había pescado."
+        ]
+      },
+      {
+        "heading": "Una promesa importante",
+        "paragraphs": [
+          "Finegas llevó el salmón a casa y pidió a Fionn que lo cocinara.",
+          "—Prepáralo con cuidado —le dijo—. Pero no comas nada.",
+          "Fionn se lo prometió. Puso el pescado sobre el fuego y empezó a darle vueltas despacio. Quería hacerlo bien."
+        ]
+      },
+      {
+        "heading": "El pulgar quemado",
+        "paragraphs": [
+          "Mientras el salmón se cocinaba, apareció una pequeña burbuja en su piel.",
+          "Fionn la tocó sin pensar y se quemó el pulgar. Se lo llevó rápidamente a la boca para aliviar el dolor.",
+          "En ese instante, algo cambió. Empezó a comprender ideas que antes le parecían difíciles. De pronto, muchas cosas cobraron sentido."
+        ]
+      },
+      {
+        "heading": "Finegas lo comprende",
+        "image": "salmonGift",
+        "paragraphs": [
+          "Cuando terminó de cocinar, Fionn llevó el salmón a Finegas.",
+          "—¿Has comido algo? —preguntó el poeta.",
+          "—No. Pero me he quemado el pulgar y me lo he metido en la boca.",
+          "Finegas guardó silencio. Comprendió que Fionn había probado el salmón por accidente. El don del conocimiento había llegado al muchacho."
+        ]
+      },
+      {
+        "heading": "Una decisión generosa",
+        "paragraphs": [
+          "Finegas estaba triste. Había esperado siete años para recibir aquel don.",
+          "Pero no culpó a Fionn. Le dijo que se comiera el salmón y utilizara bien su nueva sabiduría.",
+          "—¿Ahora lo sabré todo? —preguntó Fionn.",
+          "—Nadie sabe siempre qué es lo correcto —respondió Finegas—. Todavía tienes mucho que aprender.",
+          "Fionn dio las gracias a su maestro y siguió su camino. Según la leyenda, después podía llevarse el pulgar a la boca cuando necesitaba descubrir conocimientos ocultos."
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "question": "¿Qué esperaba pescar Finegas?",
+        "options": [
+          "El Salmón del Conocimiento",
+          "Un pájaro dorado"
+        ],
+        "correct": 0,
+        "explanation": "Finegas llevaba siete años esperando al salmón especial."
+      },
+      {
+        "question": "¿Cómo probó Fionn el salmón por primera vez?",
+        "options": [
+          "Se quemó el pulgar y se lo llevó a la boca.",
+          "Se comió el pescado a escondidas."
+        ],
+        "correct": 0,
+        "explanation": "Ocurrió por accidente cuando intentó aliviar la quemadura."
+      },
+      {
+        "question": "¿Qué le dijo Finegas a Fionn?",
+        "options": [
+          "Que se comiera el salmón y utilizara bien su don.",
+          "Que devolviera el salmón al río."
+        ],
+        "correct": 0,
+        "explanation": "Finegas decidió ayudar a su aprendiz a pesar de su tristeza."
+      }
+    ]
+  }
+}
