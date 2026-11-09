@@ -6,14 +6,15 @@ Proyecto y dirección editorial: **David Martín Guerrero**. Primer prototipo: *
 
 Este sitio es la colección hermana de [Of Kings, Curses and Mist](https://languageprepie.github.io/kings-curses-mist/), una versión literaria de mayor extensión. Las dos colecciones son distintas y no deben confundirse.
 
-## Piloto
+## Leyendas disponibles
 
 - *The Children of Lir / Los hijos de Lir*, adaptación de aproximadamente 420 palabras por idioma.
-- Ocho pasos breves, navegación progresiva, lectura en voz alta opcional y tres preguntas de comprensión no obligatorias.
-- Tres ilustraciones originales reutilizadas de la colección literaria, más una portada específica de pergamino.
+- *The Salmon of Knowledge / El salmón del conocimiento*, adaptación original en siete partes breves, con tres ilustraciones compartidas con la colección literaria.
+- Navegación progresiva por partes de longitud adaptada a cada leyenda, lectura en voz alta opcional y tres preguntas de comprensión no obligatorias por relato.
+- Ilustraciones originales reutilizadas de la colección literaria, más una portada específica de pergamino.
 - Inglés y español; avance almacenado solo en el navegador, sin cuentas.
 
-La adaptación está **pendiente de una prueba pedagógica con Ann y la profesora de apoyo**. No se presenta como una solución universal para personas autistas ni como sustituto de sus adaptaciones individualizadas.
+Las adaptaciones están **pendientes de una prueba pedagógica con Ann y la profesora de apoyo**. No se presentan como una solución universal para personas autistas ni como sustituto de sus adaptaciones individualizadas.
 
 Las leyendas de partida pertenecen a la tradición irlandesa. Los textos son nuevas adaptaciones y se han utilizado herramientas de IA como apoyo para su redacción, traducción e ilustraciones, bajo la dirección y revisión editorial de David Martín Guerrero.
 
