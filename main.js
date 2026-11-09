@@ -44,7 +44,7 @@ language.value=lang;
 const imagePaths={family:'assets/lir-family.webp',transformation:'assets/lir-transformation.webp',swans:'assets/lir-swans.webp',salmonMentor:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-mentor-4x5.webp',salmonFish:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-cover.webp',salmonGift:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-gift-4x5.webp'};
 const e=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const t=()=>UI[lang],story=()=>storyData[storyId][lang];
-function chooseStory(id){storyId=id;page=Math.min(story().sections.length-1,Math.max(0,Number(localStorage.getItem('scrolls-page-'+id)||0)));setView('reader')}
+function chooseStory(id){storyId=id;questionIndex=0;selected=-1;page=Math.min(story().sections.length-1,Math.max(0,Number(localStorage.getItem('scrolls-page-'+id)||(id==='children-of-lir'?localStorage.getItem('scrolls-page'):0)||0)));setView('reader')}
 function stopVoice(){if('speechSynthesis' in window)window.speechSynthesis.cancel();speaking=false}
 function setView(target){stopVoice();view=target;render();window.scrollTo({top:0,behavior:'instant'});app.focus({preventScroll:true})}
 function home(){return `<section class="home"><div class="cover"><div class="cover-copy"><p class="overline">${e(t().type)}</p><h1>${e(t().title)}</h1><p class="cover-subtitle">${e(t().subtitle)}</p><p class="byline">${e(t().byline)}</p><button class="button" data-action="library">${e(t().enter)} →</button></div></div><p class="home-note">${e(t().intro)}</p></section>`}
