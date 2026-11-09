@@ -19,3 +19,7 @@ Las adaptaciones están **pendientes de una prueba pedagógica con Ann y la prof
 Las leyendas de partida pertenecen a la tradición irlandesa. Los textos son nuevas adaptaciones y se han utilizado herramientas de IA como apoyo para su redacción, traducción e ilustraciones, bajo la dirección y revisión editorial de David Martín Guerrero.
 
 Consulta [PROJECT_GUIDE.md](PROJECT_GUIDE.md) para distinguir las dos colecciones dentro del proyecto de ChatGPT.
+
+## Criterio de estilo accesible
+
+La accesibilidad debe reducir la dificultad de comprensión, no la calidad literaria. Preferimos párrafos breves, conectores naturales, relaciones claras entre acciones y emociones, diálogos sencillos y un ritmo narrativo variado; evitamos tanto la infantilización como una sucesión telegráfica de frases. La extensión se adapta a cada leyenda sin imponer un número fijo de partes.
