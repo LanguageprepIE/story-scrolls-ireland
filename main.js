@@ -57,7 +57,7 @@ const language=document.getElementById('language');
 let lang=localStorage.getItem('scrolls-language')==='es'?'es':'en';
 let storyId='children-of-lir';
 let page=0;
-let view='home',questionIndex=0,selected=-1,storyData=null,speaking=false;
+let view='home',questionIndex=0,selected=-1,storyData=null,speaking=false,glossaryReturn='library';
 language.value=lang;
 const imagePaths={family:'assets/lir-family.webp',transformation:'assets/lir-transformation.webp',swans:'assets/lir-swans.webp',salmonMentor:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-mentor-4x5.webp',salmonFish:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-cover.webp',salmonGift:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-gift-4x5.webp',dagdaEmpty:'https://languageprepie.github.io/kings-curses-mist/assets/dagda-empty-hall-4x5.webp',dagdaReturn:'https://languageprepie.github.io/kings-curses-mist/assets/dagda-harp-returns-4x5.webp',dagdaMelodies:'https://languageprepie.github.io/kings-curses-mist/assets/dagda-three-melodies-4x5.webp'};
 const e=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -87,7 +87,7 @@ function render(){updateBibliography();
   document.getElementById('creditText').textContent=t().creditText;
   document.getElementById('originalLink').textContent=t().original;
   document.getElementById('originalLink').href='https://languageprepie.github.io/kings-curses-mist/'+(storyId==='salmon-of-knowledge'?'salmon.html':storyId==='dagdas-harp'?'dagda.html':'');
-  app.innerHTML=view==='home'?home():view==='library'?library():view==='reader'?reader():view==='reflection'?reflection():view==='glossary'?ScrollGlossary.glossary(lang):quiz();
+  app.innerHTML=view==='home'?home():view==='library'?library():view==='reader'?reader():view==='reflection'?reflection():view==='glossary'?ScrollGlossary.glossary(lang,glossaryReturn):quiz();
 }
 const maleNames={en:/\b(daniel|oliver|arthur|george|james|rory|reed|eddy|alex|liam|male)\b/i,es:/\b(jorge|diego|pablo|alvaro|álvaro|carlos|juan|antonio|male|masculino)\b/i};
 function chooseVoice(){const voices=window.speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith(lang+'-'));const preferred=voices.filter(v=>maleNames[lang].test(v.name));const locales=lang==='en'?['en-ie','en-gb','en-us']:['es-es','es-mx'];return (preferred.length?preferred:voices).sort((a,b)=>{const score=v=>{const n=locales.indexOf(v.lang.toLowerCase());return n<0?99:n};return score(a)-score(b)})[0]||null}
@@ -101,7 +101,7 @@ document.addEventListener('click',ev=>{
  if(ev.target.closest('[data-scroll-close]')){document.getElementById('scrollGlossDialog')?.close();return}
  if(ev.target.id==='scrollGlossDialog'){ev.target.close();return}
 });
-document.addEventListener('click',ev=>{const btn=ev.target.closest('[data-action]');if(!btn)return;switch(btn.dataset.action){case'library':setView('library');break;case'glossary':if(btn.dataset.glossFromCard)document.getElementById('scrollGlossDialog')?.close();setView('glossary');break;case'read-story':chooseStory(btn.dataset.story);break;case'previous':if(page>0){page--;localStorage.setItem('scrolls-page-'+storyId,page);setView('reader')}break;case'next':if(page<story().sections.length-1){page++;localStorage.setItem('scrolls-page-'+storyId,page);setView('reader')}else{questionIndex=0;selected=-1;setView('reflection')}break;case'start-questions':setView('quiz');break;case'listen':speakPart();break;case'answer':selected=Number(btn.dataset.answer);render();break;case'question-next':selected=-1;questionIndex++;setView('quiz');break}});
+document.addEventListener('click',ev=>{const btn=ev.target.closest('[data-action]');if(!btn)return;switch(btn.dataset.action){case'library':setView('library');break;case'glossary':glossaryReturn=view==='reader'?'reader':'library';if(btn.dataset.glossFromCard)document.getElementById('scrollGlossDialog')?.close();setView('glossary');break;case'glossary-back':setView(glossaryReturn);break;case'read-story':chooseStory(btn.dataset.story);break;case'previous':if(page>0){page--;localStorage.setItem('scrolls-page-'+storyId,page);setView('reader')}break;case'next':if(page<story().sections.length-1){page++;localStorage.setItem('scrolls-page-'+storyId,page);setView('reader')}else{questionIndex=0;selected=-1;setView('reflection')}break;case'start-questions':setView('quiz');break;case'listen':speakPart();break;case'answer':selected=Number(btn.dataset.answer);render();break;case'question-next':selected=-1;questionIndex++;setView('quiz');break}});
 language.addEventListener('change',ev=>{lang=ev.target.value;localStorage.setItem('scrolls-language',lang);stopVoice();render()});
 document.getElementById('homeBtn').addEventListener('click',()=>setView('home'));
 Promise.all([['children-of-lir','content/children-of-lir.json?v=2'],['salmon-of-knowledge','content/salmon-of-knowledge.json?v=3'],['dagdas-harp','content/dagdas-harp.json?v=1']].map(async ([id,url])=>{const r=await fetch(url);if(!r.ok)throw Error('Unable to load '+id);return [id,await r.json()]})).then(entries=>{storyData=Object.fromEntries(entries);render()}).catch(()=>{app.innerHTML='<div class="library">Unable to load the stories / No se pudieron cargar las historias.</div>'});
