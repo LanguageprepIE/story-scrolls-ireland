@@ -25,7 +25,6 @@
       },
       {
         "heading": "The enemy’s feast",
-        "image": "dagdaReturn",
         "paragraphs": [
           "That evening, the three companions reached a stronghold. Inside, the Fomorians were eating, drinking and laughing around long tables.",
           "The Dagda opened the door. The talking stopped when the warriors saw who had arrived.",
@@ -43,7 +42,8 @@
           "Then a clear note sounded across the hall. The harp shook on the wall and suddenly flew towards the Dagda. People jumped out of its path, but some were knocked down.",
           "The Dagda caught the instrument with both hands.",
           "Now the enemies were angry. There were far too many for three warriors to fight. The Dagda had another idea."
-        ]
+        ],
+        "image": "dagdaReturn"
       },
       {
         "heading": "Three powerful melodies",
@@ -130,7 +130,6 @@
       },
       {
         "heading": "El banquete enemigo",
-        "image": "dagdaReturn",
         "paragraphs": [
           "Aquella tarde llegaron a una fortaleza. Dentro, los fomorianos comían, bebían y reían alrededor de largas mesas.",
           "El Dagda abrió la puerta. Al reconocer a los tres visitantes, los guerreros dejaron de hablar.",
@@ -149,7 +148,8 @@
           "De pronto sonó una nota clara. El arpa empezó a temblar en la pared y salió volando hacia el Dagda. Los guerreros intentaron apartarse, aunque algunos recibieron un golpe.",
           "El Dagda la sujetó con las dos manos.",
           "Sus enemigos estaban furiosos. Eran demasiados para luchar contra ellos. Sin embargo, el Dagda tenía otro plan."
-        ]
+        ],
+        "image": "dagdaReturn"
       },
       {
         "heading": "Tres melodías mágicas",
