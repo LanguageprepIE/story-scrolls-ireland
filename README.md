@@ -10,6 +10,7 @@ Este sitio es la colección hermana de [Of Kings, Curses and Mist](https://langu
 
 - *The Children of Lir / Los hijos de Lir*, adaptación de unas 515 palabras por idioma, en ocho partes breves.
 - *The Salmon of Knowledge / El salmón del conocimiento*, adaptación original en siete partes breves, con tres ilustraciones compartidas con la colección literaria.
+- *The Dagda's Harp / El arpa del Dagda*, borrador bilingüe de siete partes, con tres ilustraciones reutilizadas del libro. **Pendiente de revisión y aprobación editorial de David.**
 - Navegación progresiva por partes de longitud adaptada a cada leyenda, lectura en voz alta opcional y tres preguntas de comprensión no obligatorias por relato.
 - Ilustraciones originales reutilizadas de la colección literaria, más una portada específica de pergamino.
 - Inglés y español; avance almacenado solo en el navegador, sin cuentas.
