@@ -74,3 +74,24 @@ h1{font-size:clamp(37px,6vw,77px);margin:18px 0;color:#224a3d;text-wrap:balance}
 
 /* Collapsible per-legend sources and optional further reading */
 .bibliography{max-width:740px;margin:14px auto 0;text-align:left;border-top:1px solid #b5ae9670;padding-top:12px}.bibliography summary{cursor:pointer;font-weight:600;text-align:center}.bibliography-content{padding:12px 16px 3px;line-height:1.6}.bibliography-content h3{font:22px Georgia,serif;margin:12px 0 8px}.bibliography-content h4{font-size:16px;margin:14px 0 4px}.bibliography-content ul{margin:6px 0 10px;padding-left:24px}.bibliography-content li{margin:7px 0}.bibliography-content a{text-decoration:underline;text-underline-offset:2px}.bibliography-content p{font-size:13px;line-height:1.6}
+
+
+/* Optional short mythology cards; no extra steps in the reading flow. */
+.scroll-term{display:inline;color:inherit;background:transparent;border:0;padding:0;font:inherit;text-decoration:underline;text-decoration-thickness:.08em;text-underline-offset:.18em;cursor:pointer}
+.scroll-term:hover,.scroll-term:focus-visible{color:#19633e}
+.scroll-gloss-dialog{width:min(92vw,440px);max-height:85dvh;overflow:auto;border:2px solid #a9936a;border-radius:18px;padding:0;background:#fffaf0;color:#213e30;box-shadow:0 20px 60px #1b342b55}
+.scroll-gloss-dialog::backdrop{background:#172c2385}
+.scroll-gloss-content{padding:28px 26px;position:relative}
+.scroll-gloss-label,.scroll-gloss-category{margin:0;color:#52675b;font-size:13px;font-weight:650;letter-spacing:.04em}
+.scroll-gloss-content h3{font-size:clamp(27px,4vw,34px);margin:12px 35px 12px 0}
+.scroll-gloss-content>p:not(.scroll-gloss-label){font-size:20px;line-height:1.6}
+.scroll-gloss-close{position:absolute;top:9px;right:10px;min-width:46px;min-height:46px;font-size:30px;border:0;background:transparent;color:#234c3a;border-radius:8px}
+.scroll-gloss-link{border:0;background:transparent;color:#1d583d;text-decoration:underline;text-underline-offset:3px;padding:8px 0;font-size:18px;font-weight:600;text-align:left}
+.scroll-gloss-open{display:block;margin:26px auto 0}
+.scroll-glossary{max-width:840px;margin:28px auto 55px;padding:0 18px}
+.scroll-glossary h2{font-size:clamp(31px,5vw,46px);margin:12px 0}
+.scroll-glossary>p{max-width:660px;line-height:1.65}
+.scroll-gloss-entries{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin:22px 0 26px}
+.scroll-gloss-entry{background:#fffaf0;border:1px solid #cbbb9a;border-radius:15px;padding:20px;scroll-margin-top:24px}
+.scroll-gloss-entry h3{font-size:25px;margin:7px 0 10px}
+.scroll-gloss-entry p:last-child{line-height:1.55;margin:0}
