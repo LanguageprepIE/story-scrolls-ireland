@@ -1,0 +1,214 @@
+{
+  "id": "dagdas-harp",
+  "en": {
+    "title": "The Dagda's Harp",
+    "summary": "A stolen harp, three magical melodies and a daring escape.",
+    "sections": [
+      {
+        "heading": "The Dagda and his harp",
+        "image": "dagdaEmpty",
+        "paragraphs": [
+          "Long ago, Irish stories told of a magical people called the Tuatha Dé Danann. One of their strongest leaders was the Dagda. He was powerful, loved a good feast and cared deeply about music.",
+          "His favourite instrument was a beautiful wooden harp. Its music could make people cry, laugh or fall asleep. A musician named Uaithne often played it for him.",
+          "The Tuatha Dé Danann had recently fought a battle against their enemies, the Fomorians. When the Dagda returned home, he noticed something was missing. The harp had been stolen."
+        ]
+      },
+      {
+        "heading": "An important decision",
+        "paragraphs": [
+          "The Dagda looked at the empty place beside the fire. Without the harp, his hall felt strangely quiet. The Fomorians had also taken Uaithne, the musician.",
+          "Lugh, a young warrior, found him there. Ogma, another brave fighter, soon joined them.",
+          "“Shall we gather our warriors?” Ogma asked.",
+          "“No,” said the Dagda. “The three of us will go.”",
+          "They set out together, following the tracks left by their enemies."
+        ]
+      },
+      {
+        "heading": "The enemy’s feast",
+        "image": "dagdaReturn",
+        "paragraphs": [
+          "That evening, the three companions reached a stronghold. Inside, the Fomorians were eating, drinking and laughing around long tables.",
+          "The Dagda opened the door. The talking stopped when the warriors saw who had arrived.",
+          "Then the Dagda spotted his harp. It was hanging high on a wall, beside shields taken during the battle.",
+          "Bres, one of the Fomorian leaders, stood up.",
+          "“That harp belongs to us now,” he said.",
+          "But the Dagda did not take his eyes off it."
+        ]
+      },
+      {
+        "heading": "The harp comes back",
+        "paragraphs": [
+          "The Dagda raised his voice and called the harp by its two old names: “Daur Dá Bláo! Cóir Cetharchair!”",
+          "For a moment, nothing happened. A few Fomorians laughed.",
+          "Then a clear note sounded across the hall. The harp shook on the wall and suddenly flew towards the Dagda. People jumped out of its path, but some were knocked down.",
+          "The Dagda caught the instrument with both hands.",
+          "Now the enemies were angry. There were far too many for three warriors to fight. The Dagda had another idea."
+        ]
+      },
+      {
+        "heading": "Three powerful melodies",
+        "image": "dagdaMelodies",
+        "paragraphs": [
+          "He began to play. The first melody was sad and gentle. Soon the Fomorians were crying. Even the strongest warriors lowered their weapons and wiped their eyes.",
+          "Then the Dagda changed the tune. This music was bright and joyful. The crying stopped, and laughter filled the hall. People laughed so much that they could hardly speak.",
+          "Finally, he played a slow, peaceful melody. One by one, the Fomorians grew sleepy. Their heads dropped onto the tables. Before long, the whole hall was quiet."
+        ]
+      },
+      {
+        "heading": "A quiet escape",
+        "paragraphs": [
+          "The Dagda stopped playing. He looked at Lugh and Ogma.",
+          "“Now,” he whispered.",
+          "The three companions walked carefully between the sleeping warriors. Nobody tried to stop them. Soon they were outside in the cool night air.",
+          "Ogma looked back at the stronghold. He was glad they had escaped, but the first melody had made him remember someone he missed.",
+          "Lugh noticed that he had become quiet. He said nothing. Sometimes a friend does not need to ask questions."
+        ]
+      },
+      {
+        "heading": "Music returns home",
+        "paragraphs": [
+          "The Dagda carried his harp beneath his cloak to keep it dry. They walked through the rain until their home was close.",
+          "“What about Uaithne?” Lugh asked.",
+          "“We still need to find him,” said the Dagda. “We could not rescue every prisoner tonight.”",
+          "The Dagda checked the strings of his harp. One had come loose during its flight. He tightened it and played a few soft notes.",
+          "Lugh and Ogma stood beside him and listened. Soon the hall would have its music again. And people would tell the story of the harp that answered when its owner called."
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "question": "What did the Fomorians steal?",
+        "options": [
+          "The Dagda’s harp",
+          "Lugh’s sword"
+        ],
+        "correct": 0,
+        "explanation": "They took the harp from the Dagda’s hall."
+      },
+      {
+        "question": "How did the harp return?",
+        "options": [
+          "The Dagda called it by its old names.",
+          "Bres carried it back."
+        ],
+        "correct": 0,
+        "explanation": "The harp flew to the Dagda when he called."
+      },
+      {
+        "question": "What did the last melody do?",
+        "options": [
+          "It made the Fomorians sleep.",
+          "It made the Fomorians dance."
+        ],
+        "correct": 0,
+        "explanation": "The sleeping melody allowed the three companions to escape."
+      }
+    ]
+  },
+  "es": {
+    "title": "El arpa del Dagda",
+    "summary": "Un arpa robada, tres melodías mágicas y una huida inesperada.",
+    "sections": [
+      {
+        "heading": "El Dagda y su arpa",
+        "image": "dagdaEmpty",
+        "paragraphs": [
+          "Las antiguas leyendas irlandesas hablan de un pueblo mágico llamado Tuatha Dé Danann. Uno de sus personajes más poderosos era el Dagda. Tenía una fuerza enorme, disfrutaba de los banquetes y le encantaba la música.",
+          "Su instrumento favorito era un arpa de madera muy especial. Sus melodías podían hacer llorar, reír o dormir a quienes las escuchaban. Un músico llamado Uaithne solía tocarla para él.",
+          "Los Tuatha Dé Danann acababan de luchar contra sus enemigos, los fomorianos. Cuando el Dagda volvió a casa, descubrió que faltaba algo: le habían robado el arpa."
+        ]
+      },
+      {
+        "heading": "Una decisión importante",
+        "paragraphs": [
+          "El Dagda miró el espacio vacío junto al fuego. Sin su arpa, el salón parecía demasiado silencioso. Los fomorianos también se habían llevado a Uaithne, el músico.",
+          "Lugh, un joven guerrero, se acercó a él. Poco después llegó Ogma, otro luchador valiente.",
+          "—¿Reunimos a nuestros guerreros? —preguntó Ogma.",
+          "—No —respondió el Dagda—. Iremos nosotros tres.",
+          "Y salieron juntos, siguiendo las huellas que habían dejado sus enemigos."
+        ]
+      },
+      {
+        "heading": "El banquete enemigo",
+        "image": "dagdaReturn",
+        "paragraphs": [
+          "Aquella tarde llegaron a una fortaleza. Dentro, los fomorianos comían, bebían y reían alrededor de largas mesas.",
+          "El Dagda abrió la puerta. Al reconocer a los tres visitantes, los guerreros dejaron de hablar.",
+          "Entonces vio su arpa. Estaba colgada en una pared, junto a los escudos que habían robado durante la batalla.",
+          "Bres, uno de los jefes fomorianos, se levantó.",
+          "—Ahora esa arpa es nuestra —dijo.",
+          "Pero el Dagda siguió mirando el instrumento."
+        ]
+      },
+      {
+        "heading": "El arpa responde",
+        "paragraphs": [
+          "El Dagda levantó la voz y llamó al arpa por sus dos nombres antiguos:",
+          "—¡Daur Dá Bláo! ¡Cóir Cetharchair!",
+          "Durante unos segundos no pasó nada. Algunos fomorianos se echaron a reír.",
+          "De pronto sonó una nota clara. El arpa empezó a temblar en la pared y salió volando hacia el Dagda. Los guerreros intentaron apartarse, aunque algunos recibieron un golpe.",
+          "El Dagda la sujetó con las dos manos.",
+          "Sus enemigos estaban furiosos. Eran demasiados para luchar contra ellos. Sin embargo, el Dagda tenía otro plan."
+        ]
+      },
+      {
+        "heading": "Tres melodías mágicas",
+        "image": "dagdaMelodies",
+        "paragraphs": [
+          "Empezó a tocar. La primera melodía era suave y triste. Pronto los fomorianos comenzaron a llorar. Incluso los guerreros más fuertes bajaron las armas y se secaron las lágrimas.",
+          "Después cambió el ritmo. La nueva música era alegre y juguetona. El llanto se convirtió en risa. Todos se reían tanto que apenas podían hablar.",
+          "Por último, el Dagda tocó una melodía lenta y tranquila. Uno a uno, los fomorianos sintieron mucho sueño. Apoyaron la cabeza sobre las mesas y se quedaron dormidos. Al poco tiempo, el salón estaba en silencio."
+        ]
+      },
+      {
+        "heading": "Una salida silenciosa",
+        "paragraphs": [
+          "El Dagda dejó de tocar y miró a sus compañeros.",
+          "—Ahora —susurró.",
+          "Los tres caminaron con mucho cuidado entre los guerreros dormidos. Nadie intentó detenerlos. Pronto salieron al aire fresco de la noche.",
+          "Ogma miró hacia la fortaleza. Se alegraba de haber escapado, pero la primera melodía le había recordado a alguien a quien echaba de menos.",
+          "Lugh notó que estaba callado. No le preguntó nada. A veces basta con acompañar a un amigo."
+        ]
+      },
+      {
+        "heading": "La música vuelve a casa",
+        "paragraphs": [
+          "El Dagda guardó el arpa bajo su capa para protegerla de la lluvia. Los tres siguieron andando hasta acercarse a su hogar.",
+          "—¿Y Uaithne? —preguntó Lugh.",
+          "—Todavía tenemos que encontrarlo —respondió el Dagda—. Esta noche no podíamos rescatar a todos los prisioneros.",
+          "El Dagda revisó las cuerdas del arpa. Una se había aflojado durante el vuelo. La tensó y tocó unas notas suaves.",
+          "Lugh y Ogma se quedaron a su lado escuchando. Pronto volvería a sonar la música en el salón. Y muchos recordarían la historia del arpa que acudió cuando su dueño la llamó."
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "question": "¿Qué robaron los fomorianos?",
+        "options": [
+          "El arpa del Dagda",
+          "La espada de Lugh"
+        ],
+        "correct": 0,
+        "explanation": "Se llevaron el arpa del salón del Dagda."
+      },
+      {
+        "question": "¿Cómo regresó el arpa?",
+        "options": [
+          "El Dagda la llamó por sus antiguos nombres.",
+          "Bres se la devolvió."
+        ],
+        "correct": 0,
+        "explanation": "El arpa voló hacia el Dagda cuando la llamó."
+      },
+      {
+        "question": "¿Qué provocó la última melodía?",
+        "options": [
+          "Los fomorianos se quedaron dormidos.",
+          "Los fomorianos empezaron a bailar."
+        ],
+        "correct": 0,
+        "explanation": "La melodía del sueño permitió que los tres compañeros escaparan."
+      }
+    ]
+  }
+}
