@@ -4,7 +4,7 @@ const bibliographyLabels={
 };
 function updateBibliography(){
   const b=bibliographyLabels[lang];
-  b.story=storyId==='salmon-of-knowledge'?(lang==='es'?'El salmón del conocimiento':'The Salmon of Knowledge'):(lang==='es'?'Los hijos de Lir':'The Children of Lir');
+  b.story=storyId==='dagdas-harp'?(lang==='es'?'El arpa del Dagda':"The Dagda's Harp"):storyId==='salmon-of-knowledge'?(lang==='es'?'El salmón del conocimiento':'The Salmon of Knowledge'):(lang==='es'?'Los hijos de Lir':'The Children of Lir');
   for(const [id,key] of [['bibliographyTitle','title'],['bibliographyStory','story'],['bibliographySources','sources'],['bibliographyReading','reading'],['bibliographyNote','note']]){
     document.getElementById(id).textContent=b[key];
   }
@@ -23,7 +23,21 @@ const reflectionsSalmon={
 en:{title:'Behind the Story',intro:'A little more about the legend. You can go straight to the questions if you wish.',items:[['A real river','The River Boyne flows through eastern Ireland. Many Irish legends connect rivers with wisdom and magic.'],['The salmon and the hazels','Some traditional stories say that the salmon gained wisdom by eating nuts from magical hazel trees.'],['Fionn becomes a hero','Fionn mac Cumhaill appears in many Irish tales. This story explains how he received his special knowledge.'],['Finegas and his choice','Finegas waited a long time. We imagine his sadness and generosity to help readers think about his decision.']],question:'Why might Finegas have found it difficult to give the salmon to Fionn?',questions:'Try the questions',skip:'Back to stories'},
 es:{title:'Detrás de la historia',intro:'Un poco más sobre la leyenda. Si lo prefieres, puedes pasar directamente a las preguntas.',items:[['Un río de verdad','El río Boyne recorre el este de Irlanda. Muchas leyendas irlandesas relacionan los ríos con la sabiduría y la magia.'],['El salmón y los avellanos','Algunos relatos tradicionales dicen que el salmón obtuvo su sabiduría al comer avellanas de árboles mágicos.'],['Fionn se convierte en héroe','Fionn mac Cumhaill aparece en muchas leyendas irlandesas. Esta historia explica cómo recibió su don.'],['La decisión de Finegas','Finegas esperó mucho tiempo. Hemos imaginado su tristeza y su generosidad para reflexionar sobre su decisión.']],question:'¿Por qué pudo resultarle difícil a Finegas entregar el salmón a Fionn?',questions:'Ir a las preguntas',skip:'Volver a las historias'}
 };
-const reflections={'children-of-lir':reflectionsLir,'salmon-of-knowledge':reflectionsSalmon};
+const reflectionsDagda={
+ en:{title:'Behind the Story',intro:'A little more about this legend. You can skip this section if you prefer.',items:[
+ ['An old Irish story','The Dagda, Lugh and Ogma belong to the stories of the Tuatha Dé Danann, a magical people of Irish legend.'],
+ ['A harp with two names','In the medieval tale, the Dagda calls his harp Daur Dá Bláo and Cóir Cetharchair. Uaithne is the name of his musician.'],
+ ['Three different feelings','The harp brings sadness, joy and sleep. The magical effects are part of the legend, but music can also change how we feel in everyday life.'],
+ ['A story with many versions','Our dialogue and small personal details are invented for this retelling. In an old version, the flying harp strikes and kills several enemies.']
+ ],question:'Which melody do you remember best?',questions:'Try the questions',skip:'Back to stories'},
+ es:{title:'Detrás de la historia',intro:'Un poco más sobre esta leyenda. Si lo prefieres, puedes saltar esta sección.',items:[
+ ['Una antigua leyenda irlandesa','El Dagda, Lugh y Ogma aparecen en las historias de los Tuatha Dé Danann, un pueblo mágico de las leyendas irlandesas.'],
+ ['Un arpa con dos nombres','En el relato medieval, el Dagda llama a su arpa Daur Dá Bláo y Cóir Cetharchair. Uaithne es el nombre de su músico.'],
+ ['Tres emociones diferentes','El arpa provoca tristeza, alegría y sueño. Sus poderes son legendarios, pero la música también puede cambiar cómo nos sentimos.'],
+ ['Una leyenda con variantes','Los diálogos y algunos detalles personales son inventados para esta adaptación. En una versión antigua, el arpa golpea y mata a varios enemigos al regresar.']
+ ],question:'¿Qué melodía recuerdas mejor?',questions:'Ir a las preguntas',skip:'Volver a las historias'}
+};
+const reflections={'children-of-lir':reflectionsLir,'salmon-of-knowledge':reflectionsSalmon,'dagdas-harp':reflectionsDagda};
 const bibliographyByStory={
 'children-of-lir':[
 {label:'University College Cork — CELT: The Fate of the Children of Lir',url:'https://celt.ucc.ie/published/T300014.html'},
@@ -32,7 +46,11 @@ const bibliographyByStory={
 'salmon-of-knowledge':[
 {label:'University College Cork — CELT: The Boyish Exploits of Finn',url:'https://celt.ucc.ie/published/T303023.html'},
 {label:'Dúchas — The Salmon of Knowledge in Drogheda',url:'https://www.duchas.ie/en/cbes/5008882/4963505/5077854'},
-{label:'Ask About Ireland — The Salmon of Knowledge',url:'https://www.askaboutireland.ie/reading-room/history-heritage/folklore-of-ireland/folklore-in-ireland/traditional-storytelling/fionn-and-the-fianna/the-salmon-of-knowledge/index.xml'}]
+{label:'Ask About Ireland — The Salmon of Knowledge',url:'https://www.askaboutireland.ie/reading-room/history-heritage/folklore-of-ireland/folklore-in-ireland/traditional-storytelling/fionn-and-the-fianna/the-salmon-of-knowledge/index.xml'}],
+'dagdas-harp':[
+{label:'University College Cork — CELT: Cath Maige Tuired',url:'https://celt.ucc.ie/published/T300010.html'},
+{label:'University College Cork — Introduction to Cath Maige Tuired',url:'https://celt.ucc.ie/document/T300010/'},
+{label:'Of Kings, Curses and Mist — The Dagda’s Harp',url:'https://languageprepie.github.io/kings-curses-mist/dagda.html'}]
 };
 const app=document.getElementById('app');
 const language=document.getElementById('language');
@@ -41,7 +59,7 @@ let storyId='children-of-lir';
 let page=0;
 let view='home',questionIndex=0,selected=-1,storyData=null,speaking=false;
 language.value=lang;
-const imagePaths={family:'assets/lir-family.webp',transformation:'assets/lir-transformation.webp',swans:'assets/lir-swans.webp',salmonMentor:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-mentor-4x5.webp',salmonFish:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-cover.webp',salmonGift:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-gift-4x5.webp'};
+const imagePaths={family:'assets/lir-family.webp',transformation:'assets/lir-transformation.webp',swans:'assets/lir-swans.webp',salmonMentor:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-mentor-4x5.webp',salmonFish:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-cover.webp',salmonGift:'https://languageprepie.github.io/kings-curses-mist/assets/salmon-gift-4x5.webp',dagdaEmpty:'https://languageprepie.github.io/kings-curses-mist/assets/dagda-empty-hall-4x5.webp',dagdaReturn:'https://languageprepie.github.io/kings-curses-mist/assets/dagda-harp-returns-4x5.webp',dagdaMelodies:'https://languageprepie.github.io/kings-curses-mist/assets/dagda-three-melodies-4x5.webp'};
 const e=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const t=()=>UI[lang],story=()=>storyData[storyId][lang];
 function chooseStory(id){storyId=id;questionIndex=0;selected=-1;page=Math.min(story().sections.length-1,Math.max(0,Number(localStorage.getItem('scrolls-page-'+id)||(id==='children-of-lir'?localStorage.getItem('scrolls-page'):0)||0)));setView('reader')}
@@ -49,12 +67,12 @@ function stopVoice(){if('speechSynthesis' in window)window.speechSynthesis.cance
 function setView(target){stopVoice();view=target;render();window.scrollTo({top:0,behavior:'instant'});app.focus({preventScroll:true})}
 function home(){return `<section class="home"><div class="cover"><div class="cover-copy"><p class="overline">${e(t().type)}</p><h1>${e(t().title)}</h1><p class="cover-subtitle">${e(t().subtitle)}</p><p class="byline">${e(t().byline)}</p><button class="button" data-action="library">${e(t().enter)} →</button></div></div><p class="home-note">${e(t().intro)}</p></section>`}
 function library(){
-const tiles=[{id:'children-of-lir',image:'assets/lir-swans.webp',label:'01'},{id:'salmon-of-knowledge',image:imagePaths.salmonFish,label:'02'}];
+const tiles=[{id:'children-of-lir',image:'assets/lir-swans.webp',label:'01'},{id:'salmon-of-knowledge',image:imagePaths.salmonFish,label:'02'},{id:'dagdas-harp',image:imagePaths.dagdaReturn,label:'03'}];
 return `<section class="library"><h2>${e(t().library)}</h2><p>${e(t().intro)}</p><div class="story-list">${tiles.map(tile=>{const item=storyData[tile.id][lang];return `<article class="story-tile"><img src="${tile.image}" alt=""><div><div class="tile-note">${tile.label} · ${item.sections.length} ${lang==='es'?'partes breves':'short parts'}</div><h3>${e(item.title)}</h3><p>${e(item.summary)}</p><button class="button" data-action="read-story" data-story="${tile.id}">${e(t().start)} →</button></div></article>`}).join('')}</div></section>`
 }
 function reader(){
   const parts=story().sections,s=parts[page];
-  const picture=s.image?`<img class="scene-art" src="${imagePaths[s.image]}" alt="${e(({family:lang==='es'?'Lir con sus cuatro hijos':'Lir and his four children',transformation:lang==='es'?'Los cuatro hermanos se transforman en cisnes':'Four children begin to transform into swans',swans:lang==='es'?'Cuatro cisnes blancos en el lago':'Four white swans on the lake',salmonMentor:lang==='es'?'Finegas y Fionn junto al río':'Finegas and Fionn by the river',salmonFish:lang==='es'?'Salmón plateado en el Boyne':'Silver salmon in the Boyne',salmonGift:lang==='es'?'Finegas y Fionn junto al salmón cocinado':'Finegas and Fionn beside the cooked salmon'})[s.image])}">`:'<div class="scene-motif" aria-hidden="true">✥</div>';
+  const picture=s.image?`<img class="scene-art" src="${imagePaths[s.image]}" alt="${e(({family:lang==='es'?'Lir con sus cuatro hijos':'Lir and his four children',transformation:lang==='es'?'Los cuatro hermanos se transforman en cisnes':'Four children begin to transform into swans',swans:lang==='es'?'Cuatro cisnes blancos en el lago':'Four white swans on the lake',salmonMentor:lang==='es'?'Finegas y Fionn junto al río':'Finegas and Fionn by the river',salmonFish:lang==='es'?'Salmón plateado en el Boyne':'Silver salmon in the Boyne',salmonGift:lang==='es'?'Finegas y Fionn junto al salmón cocinado':'Finegas and Fionn beside the cooked salmon',dagdaEmpty:lang==='es'?'El Dagda, Lugh y Ogma contemplan el lugar vacío del arpa':'The Dagda, Lugh and Ogma see the empty place where the harp rested',dagdaReturn:lang==='es'?'El arpa vuela hacia el Dagda en el salón de los fomorianos':'The harp flies back to the Dagda in the Fomorian hall',dagdaMelodies:lang==='es'?'El Dagda toca el arpa mientras los guerreros lloran, ríen y se duermen':'The Dagda plays the harp as warriors weep, laugh and fall asleep'})[s.image])}">`:'<div class="scene-motif" aria-hidden="true">✥</div>';
   return `<section class="reader"><div class="reader-head"><button class="button secondary" data-action="library">← ${e(t().back)}</button><span class="progress-label">${e(t().step)} ${page+1} ${e(t().of)} ${parts.length}</span></div><div class="progress-track" role="progressbar" aria-label="${e(t().step)}" aria-valuenow="${page+1}" aria-valuemin="1" aria-valuemax="${parts.length}"><div class="progress-fill" style="width:${(page+1)/parts.length*100}%"></div></div><article class="scroll-panel" aria-live="polite">${picture}<h2>${e(s.heading)}</h2><div class="story-text" id="readText">${s.paragraphs.map(p=>`<p>${e(p)}</p>`).join('')}</div></article><div class="reader-controls"><button class="button secondary" data-action="previous" ${page===0?'disabled':''}>← ${e(t().previous)}</button><button class="audio" data-action="listen" aria-label="${e(speaking?t().stop:t().listen)}">${speaking?'■':'▶'} ${e(speaking?t().stop:t().listen)}</button><button class="button" data-action="next">${e(page===parts.length-1?t().finish:t().next)} →</button></div><p class="reader-hint">${e(t().hint)}</p></section>`
 }
 function reflection(){const c=reflections[storyId][lang];return `<section class="reflection-screen"><article class="reflection-card"><p class="overline">${e(story().title)}</p><h2>${e(c.title)}</h2><p class="reflection-intro">${e(c.intro)}</p>${c.items.map(([heading,body])=>`<section class="reflection-item"><h3>${e(heading)}</h3><p>${e(body)}</p></section>`).join('')}<p class="reflection-question">${e(c.question)}</p><div class="reflection-actions"><button class="button secondary" data-action="library">${e(c.skip)}</button><button class="button" data-action="start-questions">${e(c.questions)} →</button></div></article></section>`}
@@ -68,7 +86,7 @@ function render(){updateBibliography();
   document.getElementById('creditLabel').textContent=t().credit;
   document.getElementById('creditText').textContent=t().creditText;
   document.getElementById('originalLink').textContent=t().original;
-  document.getElementById('originalLink').href='https://languageprepie.github.io/kings-curses-mist/'+(storyId==='salmon-of-knowledge'?'salmon.html':'');
+  document.getElementById('originalLink').href='https://languageprepie.github.io/kings-curses-mist/'+(storyId==='salmon-of-knowledge'?'salmon.html':storyId==='dagdas-harp'?'dagda.html':'');
   app.innerHTML=view==='home'?home():view==='library'?library():view==='reader'?reader():view==='reflection'?reflection():quiz();
 }
 const maleNames={en:/\b(daniel|oliver|arthur|george|james|rory|reed|eddy|alex|liam|male)\b/i,es:/\b(jorge|diego|pablo|alvaro|álvaro|carlos|juan|antonio|male|masculino)\b/i};
@@ -81,4 +99,4 @@ function speakPart(){
 document.addEventListener('click',ev=>{const btn=ev.target.closest('[data-action]');if(!btn)return;switch(btn.dataset.action){case'library':setView('library');break;case'read-story':chooseStory(btn.dataset.story);break;case'previous':if(page>0){page--;localStorage.setItem('scrolls-page-'+storyId,page);setView('reader')}break;case'next':if(page<story().sections.length-1){page++;localStorage.setItem('scrolls-page-'+storyId,page);setView('reader')}else{questionIndex=0;selected=-1;setView('reflection')}break;case'start-questions':setView('quiz');break;case'listen':speakPart();break;case'answer':selected=Number(btn.dataset.answer);render();break;case'question-next':selected=-1;questionIndex++;setView('quiz');break}});
 language.addEventListener('change',ev=>{lang=ev.target.value;localStorage.setItem('scrolls-language',lang);stopVoice();render()});
 document.getElementById('homeBtn').addEventListener('click',()=>setView('home'));
-Promise.all([['children-of-lir','content/children-of-lir.json?v=2'],['salmon-of-knowledge','content/salmon-of-knowledge.json?v=3']].map(async ([id,url])=>{const r=await fetch(url);if(!r.ok)throw Error('Unable to load '+id);return [id,await r.json()]})).then(entries=>{storyData=Object.fromEntries(entries);render()}).catch(()=>{app.innerHTML='<div class="library">Unable to load the stories / No se pudieron cargar las historias.</div>'});
+Promise.all([['children-of-lir','content/children-of-lir.json?v=2'],['salmon-of-knowledge','content/salmon-of-knowledge.json?v=3'],['dagdas-harp','content/dagdas-harp.json?v=1']].map(async ([id,url])=>{const r=await fetch(url);if(!r.ok)throw Error('Unable to load '+id);return [id,await r.json()]})).then(entries=>{storyData=Object.fromEntries(entries);render()}).catch(()=>{app.innerHTML='<div class="library">Unable to load the stories / No se pudieron cargar las historias.</div>'});
