@@ -62,9 +62,9 @@ const bibliographyByStory={
 {label:'Dúchas — The Salmon of Knowledge in Drogheda',url:'https://www.duchas.ie/en/cbes/5008882/4963505/5077854'},
 {label:'Ask About Ireland — The Salmon of Knowledge',url:'https://www.askaboutireland.ie/reading-room/history-heritage/folklore-of-ireland/folklore-in-ireland/traditional-storytelling/fionn-and-the-fianna/the-salmon-of-knowledge/index.xml'}],
 'children-of-tuireann':[
-{label:'P. W. Joyce — The Fate of the Children of Tuireann (public-domain retelling)',url:'https://www.gutenberg.org/ebooks/14465'},
+{label:'P. W. Joyce — The Fate of the Children of Tuireann (public-domain retelling)',url:'https://www.gutenberg.org/files/38041/38041-h/38041-h.htm'},
 {label:'Of Kings, Curses and Mist — The Children of Tuireann',url:'https://languageprepie.github.io/kings-curses-mist/tuireann.html'},
-{label:'University College Cork — CELT: Corpus of Electronic Texts',url:'https://celt.ucc.ie/'}],
+{label:'Richard J. O’Duffy — Oidhe Chloinne Tuireann, The Fate of the Children of Tuireann',url:'https://archive.org/details/fateofchildrenof00sociiala'}],
 'dagdas-harp':[
 {label:'University College Cork — CELT: Cath Maige Tuired',url:'https://celt.ucc.ie/published/T300010.html'},
 {label:'University College Cork — Introduction to Cath Maige Tuired',url:'https://celt.ucc.ie/document/T300010/'},
