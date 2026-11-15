@@ -19,7 +19,14 @@ fomorians:['Fomorians','The enemies who steal the Dagda’s harp.','Mythical peo
 lugh:['Lugh','A warrior who helps the Dagda recover his harp.','Person'],
 ogma:['Ogma','A strong warrior who joins the Dagda and Lugh.','Person'],
 bres:['Bres','A Fomorian leader who claims that the harp belongs to his people.','Person'],
-harp:['The Dagda’s harp','A magical instrument that can make listeners cry, laugh or sleep.','Magical object']
+harp:['The Dagda’s harp','A magical instrument that can make listeners cry, laugh or sleep.','Magical object'],
+tuireann:['Tuireann','Father of Brian, Iuchar and Iucharba.','Person'],
+brian:['Brian','The eldest brother. He leads the journey to repay the debt.','Person'],
+iuchar:['Iuchar','One of Tuireann’s sons. He regrets the harm they cause.','Person'],
+iucharba:['Iucharba','One of Tuireann’s sons. He travels with his brothers.','Person'],
+cian:['Cian','Lugh’s father, killed by the three brothers.','Person'],
+eraic:['Éraic','A payment demanded for killing someone in older Irish traditions.','Tradition'],
+easal:['Easal','A king who chooses to negotiate instead of fight.','Person']
 },
 es:{
 lir:['Lir','Padre de cuatro hijos que son convertidos en cisnes.','Personaje'],
@@ -38,12 +45,20 @@ fomorians:['Fomorianos','Enemigos que roban el arpa del Dagda.','Pueblo legendar
 lugh:['Lugh','Guerrero que ayuda al Dagda a recuperar su arpa.','Personaje'],
 ogma:['Ogma','Guerrero fuerte que acompaña al Dagda y a Lugh.','Personaje'],
 bres:['Bres','Jefe fomoriano que afirma que el arpa ahora pertenece a los suyos.','Personaje'],
-harp:['El arpa del Dagda','Instrumento mágico que puede hacer llorar, reír o dormir.','Objeto mágico']
+harp:['El arpa del Dagda','Instrumento mágico que puede hacer llorar, reír o dormir.','Objeto mágico'],
+tuireann:['Tuireann','Padre de Brian, Iuchar e Iucharba.','Personaje'],
+brian:['Brian','El hermano mayor. Dirige la búsqueda para pagar la deuda.','Personaje'],
+iuchar:['Iuchar','Uno de los hijos de Tuireann. Lamenta el daño que causan.','Personaje'],
+iucharba:['Iucharba','Uno de los hijos de Tuireann. Acompaña a sus hermanos.','Personaje'],
+cian:['Cian','Padre de Lugh, asesinado por los tres hermanos.','Personaje'],
+eraic:['Éraic','Compensación que se exigía por causar una muerte en antiguas tradiciones irlandesas.','Tradición'],
+easal:['Easal','Rey que prefiere negociar antes que luchar.','Personaje']
 }};
 const storyTerms={
 'children-of-lir':[['lir',['Lir']],['fionnuala',['Fionnuala']],['aoife',['Aoife']],['derravaragh',['Derravaragh']],['moyle',['Moyle']]],
 'salmon-of-knowledge':[['fionn',['Fionn']],['finegas',['Finegas']],['boyne',['Boyne']],['salmon',['Salmon of Knowledge','Salmón del Conocimiento']]],
-'dagdas-harp':[['tuatha',['Tuatha Dé Danann']],['dagda',['Dagda']],['uaithne',['Uaithne']],['fomorians',['Fomorians','fomorianos']],['lugh',['Lugh']],['ogma',['Ogma']],['bres',['Bres']],['harp',['Daur Dá Bláo','Cóir Cetharchair']]]
+'dagdas-harp':[['tuatha',['Tuatha Dé Danann']],['dagda',['Dagda']],['uaithne',['Uaithne']],['fomorians',['Fomorians','fomorianos']],['lugh',['Lugh']],['ogma',['Ogma']],['bres',['Bres']],['harp',['Daur Dá Bláo','Cóir Cetharchair']]],
+'children-of-tuireann':[['tuatha',['Tuatha Dé Danann']],['tuireann',['Tuireann']],['brian',['Brian']],['iuchar',['Iuchar']],['iucharba',['Iucharba']],['cian',['Cian']],['lugh',['Lugh']],['easal',['Easal']],['eraic',['éraic']]]
 };
 function escape(s){return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;')}
 function pattern(form){return new RegExp('(?<![\\p{L}\\p{N}])'+form.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?![\\p{L}\\p{N}])','iu')}
@@ -72,7 +87,7 @@ function popup(lang){
 }
 function glossary(lang,backView){
  const items=Object.entries(definitions[lang]).sort((a,b)=>a[1][0].replace(/^(?:the |el |la |los |las )/i,'').localeCompare(b[1][0].replace(/^(?:the |el |la |los |las )/i,''),lang,{sensitivity:'base'}));
- return '<section class="scroll-glossary"><h2>'+(lang==='es'?'Palabras y personajes':'Words and characters')+'</h2><p>'+(lang==='es'?'Un pequeño glosario de las tres leyendas. Puedes consultarlo cuando quieras.':'A short glossary for the three stories. Open it whenever you like.')+'</p><div class="scroll-gloss-entries">'+items.map(([id,item])=>'<article class="scroll-gloss-entry" id="gloss-'+id+'"><p class="scroll-gloss-category">'+escape(item[2])+'</p><h3>'+escape(item[0])+'</h3><p>'+escape(item[1])+'</p></article>').join('')+'</div><button class="button secondary" data-action="glossary-back">← '+(backView==='reader'?(lang==='es'?'Volver a la lectura':'Back to reading'):(lang==='es'?'Volver a las historias':'Back to stories'))+'</button></section>';
+ return '<section class="scroll-glossary"><h2>'+(lang==='es'?'Palabras y personajes':'Words and characters')+'</h2><p>'+(lang==='es'?'Un pequeño glosario de las cuatro leyendas. Puedes consultarlo cuando quieras.':'A short glossary for the four stories. Open it whenever you like.')+'</p><div class="scroll-gloss-entries">'+items.map(([id,item])=>'<article class="scroll-gloss-entry" id="gloss-'+id+'"><p class="scroll-gloss-category">'+escape(item[2])+'</p><h3>'+escape(item[0])+'</h3><p>'+escape(item[1])+'</p></article>').join('')+'</div><button class="button secondary" data-action="glossary-back">← '+(backView==='reader'?(lang==='es'?'Volver a la lectura':'Back to reading'):(lang==='es'?'Volver a las historias':'Back to stories'))+'</button></section>';
 }
 function open(id,lang){const data=definitions[lang][id],dlg=document.getElementById('scrollGlossDialog');if(!data||!dlg)return;dlg.querySelector('#scrollGlossTitle').textContent=data[0];dlg.querySelector('#scrollGlossMeaning').textContent=data[1];dlg.showModal();dlg.querySelector('[data-scroll-close]').focus()}
 window.ScrollGlossary={mark,popup,glossary,open};
